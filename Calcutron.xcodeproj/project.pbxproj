@@ -58,11 +58,11 @@
 		FEF9A0B41C481EAA00636C6E /* Calcutron */ = {
 			isa = PBXGroup;
 			children = (
-				FEF9A0B81C481EAA00636C6E /* AppDelegate.h */,
-				FEF9A0B91C481EAA00636C6E /* AppDelegate.m */,
 				FEF9A0BB1C481EAA00636C6E /* ViewController.h */,
 				FEF9A0BC1C481EAA00636C6E /* ViewController.m */,
 				FEF9A0BE1C481EAA00636C6E /* Main.storyboard */,
+				FEF9A0B81C481EAA00636C6E /* AppDelegate.h */,
+				FEF9A0B91C481EAA00636C6E /* AppDelegate.m */,
 				FEF9A0C11C481EAA00636C6E /* Assets.xcassets */,
 				FEF9A0C31C481EAA00636C6E /* LaunchScreen.storyboard */,
 				FEF9A0C61C481EAA00636C6E /* Info.plist */,
