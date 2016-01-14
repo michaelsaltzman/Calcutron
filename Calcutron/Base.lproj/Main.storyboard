@@ -18,13 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh6-k7-dja">
+                                <rect key="frame" x="5" y="0.0" width="595" height="600"/>
+                                <connections>
+                                    <action selector="resignFirstResponderButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RSu-PI-z1h"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2zd-va-nT1">
-                                <rect key="frame" x="20" y="0.0" width="560" height="30"/>
+                                <rect key="frame" x="20" y="30" width="560" height="30"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oKq-vq-cGc">
                                         <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fx9-Ba-eOj">
                                         <rect key="frame" x="187" y="0.0" width="187" height="30"/>
@@ -35,7 +41,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ynh-77-RZ8">
                                         <rect key="frame" x="374" y="0.0" width="187" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -43,7 +49,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Q6y-l4-uSr">
-                                <rect key="frame" x="20" y="30" width="560" height="30"/>
+                                <rect key="frame" x="20" y="60" width="560" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAg-Ei-UGR">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
@@ -56,34 +62,41 @@
                                     <constraint firstAttribute="height" constant="30" id="8Qg-yC-c5A"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oGO-pf-oho">
-                                <rect key="frame" x="20" y="90" width="560" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oGO-pf-oho">
+                                <rect key="frame" x="20" y="90" width="560" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZ2-1M-6Fd">
-                                        <rect key="frame" x="0.0" y="0.0" width="140" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="+"/>
                                         <connections>
                                             <action selector="operandOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fw3-hs-m3m"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXs-W7-9iv">
-                                        <rect key="frame" x="140" y="0.0" width="140" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="140" y="0.0" width="140" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="-"/>
                                         <connections>
                                             <action selector="operandOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FYp-iN-NtN"/>
+                                            <action selector="operandTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jwc-ax-2IR"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcT-hU-7HA">
-                                        <rect key="frame" x="280" y="0.0" width="140" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcT-hU-7HA">
+                                        <rect key="frame" x="280" y="0.0" width="140" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="*"/>
                                         <connections>
                                             <action selector="operandOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AcV-aB-Hs1"/>
+                                            <action selector="operandThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AeX-11-qSW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucR-Kt-ZNQ">
-                                        <rect key="frame" x="420" y="0.0" width="140" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="420" y="0.0" width="140" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="/"/>
                                         <connections>
+                                            <action selector="operandFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L7O-Du-Tbz"/>
                                             <action selector="operandOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Od-j4-eWQ"/>
                                         </connections>
                                     </button>
@@ -95,7 +108,7 @@
                             <constraint firstItem="Q6y-l4-uSr" firstAttribute="top" secondItem="2zd-va-nT1" secondAttribute="bottom" id="3Cj-8z-eEb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2zd-va-nT1" secondAttribute="trailing" id="829-Gs-lxf"/>
                             <constraint firstItem="2zd-va-nT1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="EB2-Ow-7OO"/>
-                            <constraint firstItem="2zd-va-nT1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="FAI-15-BIa"/>
+                            <constraint firstItem="2zd-va-nT1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="30" id="FAI-15-BIa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oGO-pf-oho" secondAttribute="trailing" id="K8Z-8h-Of6"/>
                             <constraint firstItem="oGO-pf-oho" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SEI-qO-KAj"/>
                             <constraint firstItem="oGO-pf-oho" firstAttribute="top" secondItem="2zd-va-nT1" secondAttribute="bottom" constant="60" id="U4g-4o-VS3"/>
@@ -109,6 +122,12 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="fx9-Ba-eOj" id="VxX-bx-L4e"/>
+                        <outlet property="decimalTextField" destination="ynh-77-RZ8" id="Nmq-2z-qlP"/>
+                        <outlet property="numeralTextField" destination="oKq-vq-cGc" id="jfX-m3-c9u"/>
+                        <outlet property="operandLabel" destination="oAg-Ei-UGR" id="2nO-vA-goC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
